@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .wrapper{
+        width: 1200px;
+        background-color: rgb(190, 188, 188);
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-top: 1px solid black;
+        height: 604px;
+    }
+    .header{
+        height: 200px;
+        border-bottom: 1px solid black;
+        
+        position: relative;
+
+
+    }
+    .tag-logo{
+        font-size: xx-large;
+        color: aquamarine;
+        position: absolute;
+        left: 587px;
+        top: 100px;
+
+    }
+    .tag-logo:hover{
+        color: brown;
+        cursor: pointer;
+    }
+    .logo img{
+        height: 200px;
+        width: 100%;
+    }
+   
+    .nav{
+        height: 50px;
+        border-bottom: 1px solid black;
+        background-color: antiquewhite;
+    }
+    .nav .menu ul li a{
+        text-decoration: none;
+        color:brown
+        
+    }
+    .nav .menu ul li a:hover{
+        color: red;
+    }
+    .nav .menu ul li{
+        list-style: none;
+        display: inline-block;
+        line-height: 50px;
+        text-align: center;
+        height: 50px;
+        width: 100px;
+        background-color:rgb(236, 204, 161);
+        
+        font-weight: bold;
+    }
+    .nav .menu ul li:hover{
+        background-color:rgb(106 212 254);
+        cursor: pointer;
+    }
+    .nav{
+       
+    }
+    .nav .menu ul{
+        
+
+    }
+    .menu{
+        text-align: center;
+        
+    }
+    .sub-menu{
+        position: relative;
+    }
+    .sub-menu:hover>.menu-2{
+        display: block;
+    }
+    .menu .menu-2{
+        position: absolute;
+        top: 51px;
+        right: 0px;
+        display: none;
+        
+    }
+    .sub-menu-2{
+        
+        top: 51px;
+        right: 0px;
+    }
+    .sub-menu-2:hover>.menu-3{
+        display: block;
+    }
+    .menu-3{
+        position: absolute;
+        display: none;
+        top: 51px;
+        left: 100px;
+        
+    }
+    .aside{
+        float: left;
+        width:30%;
+        border-right: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .content{
+        height: 200px;
+
+    }
+    .section{
+        float: left;
+        width:30%;
+        border-right: 1px solid black;
+        height: 100%;
+        text-align: center;
+
+    }
+    .clear{
+        clear: both;
+    }
+    .footer{
+
+        height: 150px;
+        border-top: 1px solid black;
+        border-bottom:1px solid black;
+        text-align: center;
+
+
+    }
+    
+</style>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="./hinh.jpg" alt="">
+            </div>
+            <p class="tag-logo" >Website CNTT</p>
+        </div>
+        <div class="nav">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Đồ điện tử</a></li>
+                    <li><a href="#">Đồ gia dụng</a></li>
+                    <li class="sub-menu"><a href="#">Đồ chơi</a>
+                        <ul class="menu-2">
+                            <li><a href="#">Lego</a></li>
+                            <li class="sub-menu-2"><a href="#">robot</a>
+                                <ul class="menu-3">
+                                    <li><a href="">robot đỏ</a></li>
+                                    <li><a href="">robot hồng</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Dụng cụ</a></li>
+                    <li><a href="#">Đồ sinh hoạt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="aside">aside</div>
+            <div class="section">section</div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
